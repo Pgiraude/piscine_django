@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulaire d'envoi d'emails</title>
+    <script src="./popup.js"></script>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text" required/>
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" required/>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input id="age" type="number" min="0" required/>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" required/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" required/>
+            </div>
+            <div>
+                <label for="student">Student at 42 ?</label>
+                <input id="student" type="checkbox"/>
+            </div>
+            <div>
+                <label for="gender_male">Male</label>
+                <input id="gender_male" type="radio" value="male" name="gender" required/>
+                <label for="gender_female">Female</label>
+                <input id="gender_female" type="radio" value="female" name="gender" required/>
+                <label for="gender_other">Other</label>
+                <input id="gender_other" type="radio" value="other" name="gender" required/>
+            </div>
+            <button type="submit" onclick=displayFormContents() >
+                Run that sexy javascript
+            </button>
+        </form>
+    </body>
+</html>
