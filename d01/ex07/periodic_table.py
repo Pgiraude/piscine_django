@@ -63,7 +63,7 @@ def generate_row(elements: [Element]):
                 found = True
                 break
         if not found:
-            result += "<td></td>"
+            result += "<th></th>"
     result += "</tr>"
 
     return result
@@ -76,10 +76,11 @@ def generate_table(elements: [Element]):
         result += generate_row(elements_flt)
     return result
 
-def html_generator(str):
+def html_generator(elements: [Element]):
     html = f"""<!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>periodic table</title>
         <meta charset="UTF-8">
         <style>
             td {{
@@ -90,18 +91,15 @@ def html_generator(str):
     </head>
     <body>
         <table>
-            {str}
+            {generate_table(elements)}
         </table>
-
     </body>
 </html>"""
     create_html_file(html)
 
 def main():
     lst_elements = parser("./periodic_table.txt")
-    result = generate_table(lst_elements)
-
-    html_generator(result)
+    html_generator(lst_elements)
 
 if __name__ == '__main__':
     main()

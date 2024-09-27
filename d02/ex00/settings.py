@@ -1,0 +1,5 @@
+title = "CV pierre Giraudeau"
+name = "pierre"
+surname = "GIRAUDEAU"
+job = "developpeur"
+age = "27"

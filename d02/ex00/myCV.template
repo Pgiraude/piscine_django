@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{title}</title>
+        <meta charset="UTF-8" >
+    </head>
+    <body>
+        <h1>CV {surname} {name}</h1>
+        <table>
+            <tr>
+                <th>Nom</th>
+                <td>{name}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{surname}</td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{age}</td>
+            </tr>
+            <tr>
+                <th>Profession</th>
+                <td  style="border: solid 2px; border-color:#424242;">
+                    {job}
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
