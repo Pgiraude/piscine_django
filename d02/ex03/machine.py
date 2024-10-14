@@ -1,4 +1,4 @@
-from beverages import HotBeverage, Coffee, Tea, Chocolate,Cappuccino
+from beverages import HotBeverage, Coffee, Tea, Chocolate, Cappuccino
 import random
 
 class CoffeeMachine:
