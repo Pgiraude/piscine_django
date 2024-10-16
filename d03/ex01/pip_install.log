@@ -1,0 +1,173 @@
+2024-10-16T15:16:44,950 Using pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+2024-10-16T15:16:44,952 Non-user install due to --prefix or --target option
+2024-10-16T15:16:44,954 Created temporary directory: /tmp/pip-target-rs6j6f_r
+2024-10-16T15:16:45,874 Created temporary directory: /tmp/pip-ephem-wheel-cache-fk6fc_i2
+2024-10-16T15:16:45,922 Created temporary directory: /tmp/pip-req-tracker-g4szp72s
+2024-10-16T15:16:45,924 Initialized build tracking at /tmp/pip-req-tracker-g4szp72s
+2024-10-16T15:16:45,925 Created build tracker: /tmp/pip-req-tracker-g4szp72s
+2024-10-16T15:16:45,926 Entered build tracker: /tmp/pip-req-tracker-g4szp72s
+2024-10-16T15:16:45,927 Created temporary directory: /tmp/pip-install-6z0lr_6o
+2024-10-16T15:16:46,265 Collecting git+https://github.com/jaraco/path.git
+2024-10-16T15:16:46,267   Created temporary directory: /tmp/pip-req-build-da8vudo8
+2024-10-16T15:16:46,268   Cloning https://github.com/jaraco/path.git to /tmp/pip-req-build-da8vudo8
+2024-10-16T15:16:46,270   Running command git version
+2024-10-16T15:16:46,274   git version 2.34.1
+2024-10-16T15:16:46,274   Running command git clone --filter=blob:none --quiet https://github.com/jaraco/path.git /tmp/pip-req-build-da8vudo8
+2024-10-16T15:16:50,659   Running command git rev-parse HEAD
+2024-10-16T15:16:50,663   38a2d11defabcf5fa924823d156859b7bee69339
+2024-10-16T15:16:50,663   Resolved https://github.com/jaraco/path.git to commit 38a2d11defabcf5fa924823d156859b7bee69339
+2024-10-16T15:16:50,708   Added git+https://github.com/jaraco/path.git to build tracker '/tmp/pip-req-tracker-g4szp72s'
+2024-10-16T15:16:50,711   Created temporary directory: /tmp/pip-build-env-stgaboyv
+2024-10-16T15:16:50,713   Created temporary directory: /tmp/pip-standalone-pip-je5b5e2y
+2024-10-16T15:16:58,451   Running command pip subprocess to install build dependencies
+2024-10-16T15:16:59,696   Using pip 22.0.2 from /tmp/pip-standalone-pip-je5b5e2y/__env_pip__.zip/pip (python 3.10)
+2024-10-16T15:17:01,346   Collecting setuptools>=61.2
+2024-10-16T15:17:01,366     Downloading setuptools-75.2.0-py3-none-any.whl (1.2 MB)
+2024-10-16T15:17:01,393        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 50.9 MB/s eta 0:00:00
+2024-10-16T15:17:01,464   Collecting setuptools_scm[toml]>=3.4.1
+2024-10-16T15:17:01,510     Downloading setuptools_scm-8.1.0-py3-none-any.whl (43 kB)
+2024-10-16T15:17:01,511        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.7/43.7 KB 9.0 MB/s eta 0:00:00
+2024-10-16T15:17:01,519   Collecting packaging>=20
+2024-10-16T15:17:01,523     Downloading packaging-24.1-py3-none-any.whl (53 kB)
+2024-10-16T15:17:01,530        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 KB 11.0 MB/s eta 0:00:00
+2024-10-16T15:17:01,555   Collecting tomli>=1
+2024-10-16T15:17:01,574     Downloading tomli-2.0.2-py3-none-any.whl (13 kB)
+2024-10-16T15:17:02,775   Installing collected packages: tomli, setuptools, packaging, setuptools_scm
+2024-10-16T15:17:03,669   Successfully installed packaging-24.1 setuptools-75.2.0 setuptools_scm-8.1.0 tomli-2.0.2
+2024-10-16T15:17:03,758   Running command Getting requirements to build wheel
+2024-10-16T15:17:05,900   /tmp/pip-build-env-stgaboyv/overlay/local/lib/python3.10/dist-packages/setuptools_scm/_integration/setuptools.py:31: RuntimeWarning:
+2024-10-16T15:17:05,900   ERROR: setuptools==59.6.0 is used in combination with setuptools_scm>=8.x
+
+2024-10-16T15:17:05,903   Your build configuration is incomplete and previously worked by accident!
+2024-10-16T15:17:05,904   setuptools_scm requires setuptools>=61
+
+2024-10-16T15:17:05,906   Suggested workaround if applicable:
+2024-10-16T15:17:05,907    - migrating from the deprecated setup_requires mechanism to pep517/518
+2024-10-16T15:17:05,909      and using a pyproject.toml to declare build dependencies
+2024-10-16T15:17:05,910      which are reliably pre-installed before running the build tools
+
+2024-10-16T15:17:05,913     warnings.warn(
+2024-10-16T15:17:06,237   running egg_info
+2024-10-16T15:17:06,238   creating UNKNOWN.egg-info
+2024-10-16T15:17:06,239   writing manifest file 'UNKNOWN.egg-info/SOURCES.txt'
+2024-10-16T15:17:06,266   writing manifest file 'UNKNOWN.egg-info/SOURCES.txt'
+2024-10-16T15:17:06,289   Created temporary directory: /tmp/pip-standalone-pip-lukrzaub
+2024-10-16T15:17:06,418   Running command pip subprocess to install backend dependencies
+2024-10-16T15:17:07,613   Using pip 22.0.2 from /tmp/pip-standalone-pip-lukrzaub/__env_pip__.zip/pip (python 3.10)
+2024-10-16T15:17:08,368   Collecting wheel
+2024-10-16T15:17:08,383     Downloading wheel-0.44.0-py3-none-any.whl (67 kB)
+2024-10-16T15:17:08,391        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.1/67.1 KB 13.3 MB/s eta 0:00:00
+2024-10-16T15:17:08,637   Installing collected packages: wheel
+2024-10-16T15:17:08,673     Creating /tmp/pip-build-env-stgaboyv/normal/local/bin
+2024-10-16T15:17:08,675     changing mode of /tmp/pip-build-env-stgaboyv/normal/local/bin/wheel to 755
+2024-10-16T15:17:08,681   Successfully installed wheel-0.44.0
+2024-10-16T15:17:08,752   Created temporary directory: /tmp/pip-modern-metadata-ehlxegf1
+2024-10-16T15:17:08,754   Running command Preparing metadata (pyproject.toml)
+2024-10-16T15:17:08,941   /tmp/pip-build-env-stgaboyv/overlay/local/lib/python3.10/dist-packages/setuptools_scm/_integration/setuptools.py:31: RuntimeWarning:
+2024-10-16T15:17:08,942   ERROR: setuptools==59.6.0 is used in combination with setuptools_scm>=8.x
+
+2024-10-16T15:17:08,944   Your build configuration is incomplete and previously worked by accident!
+2024-10-16T15:17:08,945   setuptools_scm requires setuptools>=61
+
+2024-10-16T15:17:08,947   Suggested workaround if applicable:
+2024-10-16T15:17:08,948    - migrating from the deprecated setup_requires mechanism to pep517/518
+2024-10-16T15:17:08,949      and using a pyproject.toml to declare build dependencies
+2024-10-16T15:17:08,950      which are reliably pre-installed before running the build tools
+
+2024-10-16T15:17:08,952     warnings.warn(
+2024-10-16T15:17:08,992   running dist_info
+2024-10-16T15:17:08,995   creating /tmp/pip-modern-metadata-ehlxegf1/UNKNOWN.egg-info
+2024-10-16T15:17:08,996   writing manifest file '/tmp/pip-modern-metadata-ehlxegf1/UNKNOWN.egg-info/SOURCES.txt'
+2024-10-16T15:17:09,021   writing manifest file '/tmp/pip-modern-metadata-ehlxegf1/UNKNOWN.egg-info/SOURCES.txt'
+2024-10-16T15:17:09,531   Source in /tmp/pip-req-build-da8vudo8 has version 17.0.1.dev19+g38a2d11, which satisfies requirement UNKNOWN==17.0.1.dev19+g38a2d11 from git+https://github.com/jaraco/path.git
+2024-10-16T15:17:09,533   Removed UNKNOWN==17.0.1.dev19+g38a2d11 from git+https://github.com/jaraco/path.git from build tracker '/tmp/pip-req-tracker-g4szp72s'
+2024-10-16T15:17:09,535 Created temporary directory: /tmp/pip-unpack-_5srqcu7
+2024-10-16T15:17:09,536 Building wheels for collected packages: UNKNOWN
+2024-10-16T15:17:09,538   Created temporary directory: /tmp/pip-wheel-ztcnqrp_
+2024-10-16T15:17:09,539   Destination directory: /tmp/pip-wheel-ztcnqrp_
+2024-10-16T15:17:09,541   Running command Building wheel for UNKNOWN (pyproject.toml)
+2024-10-16T15:17:09,732   /tmp/pip-build-env-stgaboyv/overlay/local/lib/python3.10/dist-packages/setuptools_scm/_integration/setuptools.py:31: RuntimeWarning:
+2024-10-16T15:17:09,733   ERROR: setuptools==59.6.0 is used in combination with setuptools_scm>=8.x
+
+2024-10-16T15:17:09,735   Your build configuration is incomplete and previously worked by accident!
+2024-10-16T15:17:09,736   setuptools_scm requires setuptools>=61
+
+2024-10-16T15:17:09,738   Suggested workaround if applicable:
+2024-10-16T15:17:09,739    - migrating from the deprecated setup_requires mechanism to pep517/518
+2024-10-16T15:17:09,740      and using a pyproject.toml to declare build dependencies
+2024-10-16T15:17:09,741      which are reliably pre-installed before running the build tools
+
+2024-10-16T15:17:09,743     warnings.warn(
+2024-10-16T15:17:09,792   running bdist_wheel
+2024-10-16T15:17:10,732   running build
+2024-10-16T15:17:10,782   running install
+2024-10-16T15:17:10,784   running install_egg_info
+2024-10-16T15:17:10,833   Traceback (most recent call last):
+2024-10-16T15:17:10,834     File "/usr/lib/python3/dist-packages/pip/_vendor/pep517/in_process/_in_process.py", line 363, in <module>
+2024-10-16T15:17:10,835       main()
+2024-10-16T15:17:10,836     File "/usr/lib/python3/dist-packages/pip/_vendor/pep517/in_process/_in_process.py", line 345, in main
+2024-10-16T15:17:10,837       json_out['return_val'] = hook(**hook_input['kwargs'])
+2024-10-16T15:17:10,838     File "/usr/lib/python3/dist-packages/pip/_vendor/pep517/in_process/_in_process.py", line 261, in build_wheel
+2024-10-16T15:17:10,839       return _build_backend().build_wheel(wheel_directory, config_settings,
+2024-10-16T15:17:10,840     File "/usr/lib/python3/dist-packages/setuptools/build_meta.py", line 230, in build_wheel
+2024-10-16T15:17:10,841       return self._build_with_temp_dir(['bdist_wheel'], '.whl',
+2024-10-16T15:17:10,842     File "/usr/lib/python3/dist-packages/setuptools/build_meta.py", line 215, in _build_with_temp_dir
+2024-10-16T15:17:10,843       self.run_setup()
+2024-10-16T15:17:10,844     File "/usr/lib/python3/dist-packages/setuptools/build_meta.py", line 158, in run_setup
+2024-10-16T15:17:10,845       exec(compile(code, __file__, 'exec'), locals())
+2024-10-16T15:17:10,846     File "setup.py", line 1, in <module>
+2024-10-16T15:17:10,847     File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 153, in setup
+2024-10-16T15:17:10,880       return distutils.core.setup(**attrs)
+2024-10-16T15:17:10,881     File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 148, in setup
+2024-10-16T15:17:10,882       return run_commands(dist)
+2024-10-16T15:17:10,883     File "/usr/lib/python3/dist-packages/setuptools/_distutils/core.py", line 163, in run_commands
+2024-10-16T15:17:10,884       dist.run_commands()
+2024-10-16T15:17:10,885     File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+2024-10-16T15:17:10,976       self.run_command(cmd)
+2024-10-16T15:17:10,977     File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 986, in run_command
+2024-10-16T15:17:10,978       cmd_obj.run()
+2024-10-16T15:17:10,979     File "/usr/lib/python3/dist-packages/wheel/bdist_wheel.py", line 335, in run
+2024-10-16T15:17:11,020       self.run_command('install')
+2024-10-16T15:17:11,021     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+2024-10-16T15:17:11,022       self.distribution.run_command(command)
+2024-10-16T15:17:11,023     File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 986, in run_command
+2024-10-16T15:17:11,024       cmd_obj.run()
+2024-10-16T15:17:11,025     File "/usr/lib/python3/dist-packages/setuptools/command/install.py", line 68, in run
+2024-10-16T15:17:11,063       return orig.install.run(self)
+2024-10-16T15:17:11,064     File "/usr/lib/python3/dist-packages/setuptools/_distutils/command/install.py", line 622, in run
+2024-10-16T15:17:11,065       self.run_command(cmd_name)
+2024-10-16T15:17:11,067     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 313, in run_command
+2024-10-16T15:17:11,068       self.distribution.run_command(command)
+2024-10-16T15:17:11,069     File "/usr/lib/python3/dist-packages/setuptools/_distutils/dist.py", line 985, in run_command
+2024-10-16T15:17:11,070       cmd_obj.ensure_finalized()
+2024-10-16T15:17:11,071     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 107, in ensure_finalized
+2024-10-16T15:17:11,072       self.finalize_options()
+2024-10-16T15:17:11,074     File "/usr/lib/python3/dist-packages/setuptools/command/install_egg_info.py", line 25, in finalize_options
+2024-10-16T15:17:11,075       self.set_undefined_options('install_lib',
+2024-10-16T15:17:11,076     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 287, in set_undefined_options
+2024-10-16T15:17:11,077       src_cmd_obj.ensure_finalized()
+2024-10-16T15:17:11,078     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 107, in ensure_finalized
+2024-10-16T15:17:11,079       self.finalize_options()
+2024-10-16T15:17:11,080     File "/usr/lib/python3/dist-packages/setuptools/command/install_lib.py", line 17, in finalize_options
+2024-10-16T15:17:11,081       self.set_undefined_options('install',('install_layout','install_layout'))
+2024-10-16T15:17:11,082     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 290, in set_undefined_options
+2024-10-16T15:17:11,083       setattr(self, dst_option, getattr(src_cmd_obj, src_option))
+2024-10-16T15:17:11,084     File "/usr/lib/python3/dist-packages/setuptools/_distutils/cmd.py", line 103, in __getattr__
+2024-10-16T15:17:11,085       raise AttributeError(attr)
+2024-10-16T15:17:11,086   AttributeError: install_layout. Did you mean: 'install_platlib'?
+2024-10-16T15:17:11,097   ERROR: [present-diagnostic] Building wheel for UNKNOWN (pyproject.toml) exited with 1
+2024-10-16T15:17:11,102   [bold magenta]full command[/]: [blue]/usr/bin/python3 /usr/lib/python3/dist-packages/pip/_vendor/pep517/in_process/_in_process.py build_wheel /tmp/tmpt00_m7xl[/]
+2024-10-16T15:17:11,103   [bold magenta]cwd[/]: /tmp/pip-req-build-da8vudo8
+2024-10-16T15:17:11,104   ERROR: Failed building wheel for UNKNOWN
+2024-10-16T15:17:11,106 Failed to build UNKNOWN
+2024-10-16T15:17:11,107 ERROR: Could not build wheels for UNKNOWN, which is required to install pyproject.toml-based projects
+2024-10-16T15:17:11,109 Exception information:
+2024-10-16T15:17:11,109 Traceback (most recent call last):
+2024-10-16T15:17:11,109   File "/usr/lib/python3/dist-packages/pip/_internal/cli/base_command.py", line 165, in exc_logging_wrapper
+2024-10-16T15:17:11,109     status = run_func(*args)
+2024-10-16T15:17:11,109   File "/usr/lib/python3/dist-packages/pip/_internal/cli/req_command.py", line 205, in wrapper
+2024-10-16T15:17:11,109     return func(self, options, args)
+2024-10-16T15:17:11,109   File "/usr/lib/python3/dist-packages/pip/_internal/commands/install.py", line 375, in run
+2024-10-16T15:17:11,109     raise InstallationError(
+2024-10-16T15:17:11,109 pip._internal.exceptions.InstallationError: Could not build wheels for UNKNOWN, which is required to install pyproject.toml-based projects
+2024-10-16T15:17:11,110 Removed build tracker: '/tmp/pip-req-tracker-g4szp72s'
