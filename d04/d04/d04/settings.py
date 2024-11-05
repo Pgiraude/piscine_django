@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ex00.apps.Ex00Config',
     'ex01.apps.Ex01Config',
+    'ex02.apps.Ex02Config',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +124,64 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+        'history_format': {
+            '()': 'django.utils.log.ServerFormatter',
+            'format': '[{asctime}] {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'level': 'INFO',
+            'filters': ['require_debug_true'],
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',  # Utiliser le format simple pour la console
+        },
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'ex02/history_logs.log',  # Chemin du fichier de log
+            'formatter': 'verbose',  # Utiliser le format verbose pour les logs de fichier
+        },
+        'history_handler': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'ex02/history_logs.log',  # Nom du fichier de log pour l'historique
+            'mode': 'a',
+            'formatter': 'history_format',  # Utiliser le format spécifique pour l'historique
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'history': {
+            'handlers': ['console', 'history_handler'],  # Écrit les logs d'historique dans la console et dans un fichier
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
